@@ -1,0 +1,300 @@
+body {
+	/*background-color: #efeee7;*/
+	background-image: url("symphony.png");
+	font-family: "georgia","times new roman","times","serif";
+	}
+	header{
+		
+		height: 67px;
+		background: white;
+	}
+
+	h1 {
+		padding:20px;
+		border: 2px solid#cccccc;
+		font-size: 20px; 
+		text-align: center; 
+		background-color: #4aaaa5; 
+		color: white; 
+		width:30%;
+		float:left;
+		margin-left:15px;
+	}
+
+	nav ul {
+		list-style-type: none;
+ 		width: 285px;
+		font-size: 15px;
+		float:right;
+		padding: 10px;
+	}
+
+   	nav li {
+   		float:right;
+   	}
+
+   	nav li :hover { 
+   		background-color: pink; 
+   	}
+	
+	li a {
+		display:inline-block;
+		color:#777777;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration:none;
+	}
+	
+	
+	section{
+		clear:both;
+		width: 60%;
+		border: 2px solid #dddddd;
+		background-color: #ffffff;
+		padding: 15px;
+		float: left;
+		margin-top: 30px;
+		overflow: auto;
+		margin-left: 10px;
+		text-indent: 30px;
+		margin-bottom: 150px;
+	}
+	
+	h2 {
+		color:#4aaaa5;
+		font-size: 25px; 
+		text-align: left; 
+		margin: 15px; 
+	}
+
+
+
+	img {
+		border:2px solid #4aaaa5;
+		margin:10px;
+		float: left;
+	}
+
+	
+
+	.hover-rotate:hover {
+ 	-ms-transform: rotate(-10deg);
+  	-webkit-transform: rotate(-10deg);
+  	-moz-transform: rotate(-10deg);
+  	-o-transform: rotate(-10deg);
+  	transform: rotate(-10deg);
+  
+}
+
+	p {
+		color:#777777;
+		text-align: justify;
+		font-size: 15px;
+	}
+
+
+	aside {
+		padding:15px;
+		width: 30%;
+		border: 2px solid #dddddd;
+		background-color: #ffffff;
+		color:#4aaaa5;
+		font-size: 25px;
+		float: right;
+		margin-right :15px;
+		margin-top: 30px;
+
+	}
+
+	aside ul{
+		text-align: center;
+	}
+
+	aside li{
+		float:auto;
+		display:inline-block;
+	}
+
+
+	aside h2{
+		text-align: center;
+	}
+
+	aside img{
+		display:inline-block;
+		width:40px;
+		height:40px;
+		border:0;
+
+	}
+
+
+	footer, .push{
+		padding: 20px;
+		height: 25px;
+		clear:both;
+		text-align: center;
+		font-size: 12px;
+		background: #666666;
+		color: white;
+		border-top: 5px solid #4aaaa5;
+		position: fixed;
+		left: 0;
+		bottom:0;
+		width: 100%;
+	}
+
+	.contact{
+		color:#777777;
+		text-align: justify;
+		font-size: 15px;
+
+	}
+
+	textarea{
+	width: 100%;
+	resize:none;
+	border:2px solid #dddddd;
+	}
+
+	.campos{
+		color: gray;
+		text-align: justify;
+		font-size: 14px;
+	}
+
+	input[type=text]{
+		border: 2px solid #dddddd;
+		width: 100%;
+	}
+
+	.ppic{
+		display: inline-block;
+		width: 150px;
+		height: 150px;
+	}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+	/* Rules for screen width at 980 px or lower*/
+
+	@media screen and (min-width:768px, max-width: 980px) {
+		
+		body{
+			border:3px solid red;
+		}
+
+		.ppic{
+			width:50%;
+			display: block;
+		}
+
+		section{
+			width:40%;
+			float:left;
+			height: auto;
+			margin-right: 15px;
+			margin-bottom: 150px;
+		}
+
+		aside{
+			width:30%;
+			float:left;
+		}
+
+		aside a{
+			width:10px;
+			display:inline-block;
+			border:0;
+		}
+ 
+		.mipic{
+			width:50%;
+			display:flex;
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+
+		p {
+			clear:both;
+			overflow: auto;
+		}
+	}
+
+
+	@media screen and (max-width: 768px) {
+
+		body{
+			border:3px solid green;
+		}
+
+		aside{
+			clear:both;
+			width:90%;
+			margin-bottom: 150px;
+		}
+
+		aside li{
+			padding-right: 15px;
+			padding-left: 15px;
+
+		}
+
+		section{
+			clear:both;
+			width:600px;
+			margin-bottom: 25px;
+
+		}
+
+		p{
+			clear:auto;
+		}
+
+		img.mipic{
+			float: left;
+			width: 30%;
+			}
+
+		.ppic{
+			display:inline-block;
+			width: 40%;
+		}	
+		
+	}
+
+	@media screen and (max-width: 640px){
+		body{
+			border:3px solid yellow;
+		}
+		h1{
+			width: 100%;
+			margin:0px;
+			position:static;
+		}
+
+		nav{
+			display:inline-block;
+
+		}
+		ul nav{
+			margin-bottom: 30px;
+		}
+		section{
+			width: 550px;
+			margin-top: 70px;
+		}
+		.ppic{
+			width:70%;
+			height: 70%;
+			display: block;
+		}
+		.navigation{
+			border:1px solid gray;
+			background-color: lightgrey;
+			clear:both;
+			margin-bottom: 5px;
+			padding-left: 150px;
+
+		}
+	}
+	
